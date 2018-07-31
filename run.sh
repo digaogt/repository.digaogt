@@ -1,0 +1,1 @@
+./create_repository.py ../plugin.video.brplay ../plugin.video.spotifytube
