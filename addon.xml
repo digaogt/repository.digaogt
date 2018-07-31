@@ -2,7 +2,7 @@
 <addon id="repository.digaogt"
         name="Digaogt Kodi Add-On Repository"
         version="1.0.0"
-        provider-name="Digaogt">
+        provider-name="">
     <extension point="xbmc.addon.repository" name="Digaogt Kodi Add-On Repository">
         <info compressed="false">https://raw.githubusercontent.com/digaogt/repository.digaogt/master/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/digaogt/repository.digaogt/master/addons.xml.md5</checksum>
@@ -10,7 +10,7 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Addons brasileiros</summary>
-        <description>Download e instalação de addons brasileiros</description>
+        <description>Disponibilizados os melhores addons brasileiros</description>
         <platform>all</platform>
     </extension>
 </addon>
