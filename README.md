@@ -1,2 +1,2 @@
-# repository.digaogt
-Repositorio de Addons Brasileiros
+# Repositorio de Addons Brasileiros
+Plugins BRplay e SpotifyTube
