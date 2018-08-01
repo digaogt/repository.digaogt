@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.digaogt"
-        name="Digaogt Kodi Add-On Repository"
-        version="1.0.0"
-        provider-name="Digaogt">
-    <extension point="xbmc.addon.repository" name="Digaogt Kodi Add-On Repository">
-        <info compressed="false">https://raw.githubusercontent.com/digaogt/repository.digaogt/master/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/digaogt/repository.digaogt/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/digaogt/repository.digaogt/master/</datadir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Addons brasileiros</summary>
-        <description>Disponibilizados os melhores addons brasileiros</description>
-        <platform>all</platform>
-    </extension>
+<addon id="repository.xbmcadult" name="Digaogt Addons" version="1.0.6" provider-name="digaogt">
+	<extension point="xbmc.addon.repository" name="Digaogt Addons">
+		<info compressed="false">https://raw.githubusercontent.com/digaogt/repository.digaogt/master//addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/digaogt/repository.digaogt/master//addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/digaogt/repository.digaogt/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Addons brasileiros Digaogt</summary>
+		<description>Este repositorio contem adding brasileiros.</description>
+		<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+		<platform>all</platform>
+	</extension>
 </addon>
