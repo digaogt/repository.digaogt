@@ -1,72 +1,16 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="plugin.video.brplay" name="BR play" provider-name="brplayer" version="0.0.22">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="script.module.beautifulsoup" version="3.2.1" />
-		<import addon="script.module.requests" version="0.13.2" />
-		<import addon="script.module.buggalo" version="1.1.6" />
-		<import addon="script.module.pytz" version="2014.2" />
-	</requires>
-	<extension library="addon.py" point="xbmc.python.pluginsource">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Globo Play, Globosat Play and Premium Channels on Kodi</summary>
-		<description>Brazilian video streaming services for subscribers</description>
-		<platform>all</platform>
-		<license>GPL3</license>
-		<source>https://github.com/olavopeixoto/plugin.video.brplay</source>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
-			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
-			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
-		</assets>
-		<news>0.0.22
-			- Support for 4k HDR content
-			- Support for local programming
-			- Support for Futura Live Channel
-			- Suport for BBB (Globosat and GloboPlay)
-			- Suport for Universal Channel Live
-			- Support for Globosat Play Geolocation
-			- Updated Combate scraper logic
-			- Added more Combate content
-			- Globosat Play and Sexyhot Play now use Globo Play credentials (must be associated to the provider in the website)
-			- Support for REDE AMAZONICA Globo affiliate
-			- update Globoplay epg API
-			- option to set different credentials for Globosat play
-			- option to disable Globosat play
-        </news>
-	</extension>
-</addon><addon id="plugin.video.spotifytube" name="Spotify Tube" provider-name="DigaoGT" version="1.0.2">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.youtube" name="YouTube" version="6.1.0~beta1" provider-name="bromix">
     <requires>
-        <import addon="xbmc.python" version="2.1.0" />
-        <import addon="plugin.video.youtube" version="5.1.20.4" />
+        <import addon="xbmc.python" version="2.20.0"/>
+        <import addon="script.module.six"/>
+        <import addon="script.module.requests" version="2.12.4"/>
+        <import addon="script.module.inputstreamhelper" version="0.2.2" optional="true"/>
     </requires>
-    <extension library="default.py" point="xbmc.python.pluginsource">
-        <provides>video audio</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang="en">Videos musicais via Youtube</summary>
-        <language />
-        <description lang="en">Assista aos videos das músicas das playlists do Spotify via Youtube</description>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-        <website />
-    </extension>
-</addon><addon id="plugin.video.youtube" name="YouTube" provider-name="bromix" version="6.1.0~beta1">
-    <requires>
-        <import addon="xbmc.python" version="2.20.0" />
-        <import addon="script.module.six" />
-        <import addon="script.module.requests" version="2.12.4" />
-        <import addon="script.module.inputstreamhelper" optional="true" version="0.2.2" />
-    </requires>
-    <extension library="resources/lib/default.py" point="xbmc.python.pluginsource">
+    <extension point="xbmc.python.pluginsource" library="resources/lib/default.py">
         <provides>video</provides>
     </extension>
-    <extension library="resources/lib/startup.py" point="xbmc.service" start="login" />
-    <extension library="resources/lib/" point="xbmc.python.module" />
+    <extension point="xbmc.service" library="resources/lib/startup.py" start="login"/>
+    <extension point="xbmc.python.module" library="resources/lib/"/>
     <extension point="xbmc.addon.metadata">
         <news>
 6.1.0
@@ -99,7 +43,7 @@
 [fix] Signature function not found error for some users
 [fix] Context Menu -&gt; More -&gt; Related Videos w/ Kodi 18
 [fix] Sign In/Sign Out causing crash with Kodi 18 nightlies
-[fix] Channel 'mine' caching
+[fix] Channel &#39;mine&#39; caching
 [fix] Time changing when playing generated dash
 [lang] es_es strings |contrib: roliverosc|
 [lang] el_gr strings |contrib: twilight0|
@@ -136,7 +80,7 @@
         <disclaimer lang="el_gr">Η παρούσα μικροεφαρμογή δεν έχει υϊοθετηθεί από την Google</disclaimer>
         <summary lang="nb_no">Tillegg for YouTube</summary>
         <description lang="nb_no">YouTube er en av verdens største nettsider for videodeling.</description>
-        <language />
+        <language></language>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
         <forum>https://forum.kodi.tv/showthread.php?tid=325740</forum>
@@ -145,4 +89,4 @@
         <source>https://github.com/jdf76/plugin.video.youtube</source>
         <reuselanguageinvoker>true</reuselanguageinvoker>
     </extension>
-</addon></addons>
+</addon>
