@@ -1,1 +1,1 @@
-./create_repository.py https://github.com/olavopeixoto/plugin.video.brplay ../plugin.video.spotifytube https://github.com/jdf76/plugin.video.youtube
+./create_repository.py https://github.com/olavopeixoto/plugin.video.brplay ../plugin.video.spotifytube https://github.com/jdf76/plugin.video.youtube ../plugin.video.live.streamspro
