@@ -1,1 +1,0 @@
-./create_repository.py ../plugin.video.live.streamspro
