@@ -1,0 +1,1 @@
+./create_repository.py https://github.com/olavopeixoto/plugin.video.brplay
