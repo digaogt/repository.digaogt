@@ -39,22 +39,22 @@
 			- option to disable Globosat play
         </news>
 	</extension>
-</addon><addon id="plugin.video.spotifytube" name="Spotify Tube" provider-name="DigaoGT" version="1.0.2">
-    <requires>
-        <import addon="xbmc.python" version="2.25.0" />
-        <import addon="plugin.video.youtube" />
-    </requires>
-    <extension library="default.py" point="xbmc.python.pluginsource">
-        <provides>video audio</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang="en">Videos musicais via Youtube</summary>
-        <language />
-        <description lang="en">Assista aos videos das músicas das playlists do Spotify via Youtube</description>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-        <website />
-    </extension>
+</addon><addon id="plugin.video.spotifytube" name="Spotify Tube" provider-name="DigaoGT" version="1.0.3">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0" />
+		<import addon="plugin.video.youtube" />
+	</requires>
+	<extension library="default.py" point="xbmc.python.pluginsource">
+		<provides>video audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Videos musicais via Youtube</summary>
+		<language />
+		<description lang="en">Assista aos videos das músicas das playlists do Spotify via Youtube</description>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<website />
+	</extension>
 </addon><addon id="plugin.video.youtube" name="YouTube" provider-name="bromix" version="6.1.0~beta2">
     <requires>
         <import addon="xbmc.python" version="2.20.0" />
