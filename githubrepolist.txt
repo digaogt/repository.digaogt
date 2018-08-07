@@ -1,4 +1,2 @@
 https://github.com/olavopeixoto/plugin.video.brplay
 https://github.com/jdf76/plugin.video.youtube
-../plugin.video.spotifytube
-../plugin.video.live.streamspro

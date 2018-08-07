@@ -457,7 +457,7 @@ class Generator:#update addons.xml to reflect local addon folder
 
         def _generate_addons_file( self ):
                 # addon list
-                base="repo"
+                base="../"
                 addons = os.listdir( base )
                 # final addons text
                 addons_xml = u"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<addons>\n"
