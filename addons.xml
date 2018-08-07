@@ -153,7 +153,7 @@
     <import addon="script.module.beautifulsoup4" />
     <import addon="script.module.requests" />
     <import addon="script.module.httplib2" />
-    <import addon="script.module.liveresolver" optional="true" version="0.1.50" />
+    <import addon="script.module.liveresolver" optional="true" />
     <import addon="script.module.youtube.dl" optional="true" />
     <import addon="plugin.video.youtube" optional="true" />
     <import addon="script.module.urlresolver" optional="true" />
@@ -185,4 +185,15 @@
     </description>
     <platform>all</platform>
   </extension>
+</addon><addon id="repository.kodil" name=".[COLOR blue]www.Kodisrael.co.il [/COLOR][COLOR white] Repository [/COLOR]" provider-name="kodil" version="1.0.1">
+    <extension name="www.Kodisrael.co.il Repository " point="xbmc.addon.repository">
+        <info compressed="false">https://raw.githubusercontent.com/kodil/kodil/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/kodil/kodil/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/kodil/kodil/master/repo</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>www.kodisrael.co.il repository</summary>
+        <description>www.kodisrael.co.il offical repository </description>
+        <platform>all</platform>
+    </extension>
 </addon></addons>
