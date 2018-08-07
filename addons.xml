@@ -41,8 +41,8 @@
 	</extension>
 </addon><addon id="plugin.video.spotifytube" name="Spotify Tube" provider-name="DigaoGT" version="1.0.2">
     <requires>
-        <import addon="xbmc.python" version="2.1.0" />
-        <import addon="plugin.video.youtube" version="5.1.20.4" />
+        <import addon="xbmc.python" />
+        <import addon="plugin.video.youtube" />
     </requires>
     <extension library="default.py" point="xbmc.python.pluginsource">
         <provides>video audio</provides>
