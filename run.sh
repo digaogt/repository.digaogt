@@ -1,1 +1,6 @@
-./create_repository.py https://github.com/olavopeixoto/plugin.video.brplay ../plugin.video.spotifytube https://github.com/jdf76/plugin.video.youtube ../plugin.video.live.streamspro ../repository.kodil
+git pull
+/usr/local/bin/python3.6  new_xml_gen.py
+sleep 7
+git add *
+git commit -a -m "update push in : `date`"
+git push
