@@ -129,10 +129,11 @@
         <source>https://github.com/jdf76/plugin.video.youtube</source>
         <reuselanguageinvoker>true</reuselanguageinvoker>
     </extension>
-</addon><addon id="plugin.video.spotifytube" name="Spotify Tube" provider-name="DigaoGT" version="1.0.3">
-	<requires>
-		<import addon="xbmc.python" version="2.25.0" />
-		<import addon="plugin.video.youtube" />
+</addon><addon id="plugin.video.spotifytube" name="Spotify Tube" provider-name="DigaoGT" version="1.0.4">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0" />
+        <import addon="plugin.video.youtube" />
+
 	</requires>
 	<extension library="default.py" point="xbmc.python.pluginsource">
 		<provides>video audio</provides>
