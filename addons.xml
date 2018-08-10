@@ -129,6 +129,28 @@
         <source>https://github.com/jdf76/plugin.video.youtube</source>
         <reuselanguageinvoker>true</reuselanguageinvoker>
     </extension>
+</addon><addon id="script.module.web-pdb" name="Web-PDB" provider-name="Roman V.M." version="1.4.2">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0" />
+    <import addon="script.module.bottle" version="0.12.0" />
+  </requires>
+  <extension library="main.py" point="xbmc.python.script">
+    <provides>executable</provides>
+  </extension>
+  <extension library="libs" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Web-based remote Python debugger</summary>
+    <description lang="en_GB">Provides a web-UI for Python's built-in PDB debugger for remote debugging Kodi addons.</description>
+    <platform>all</platform>
+    <license>MIT</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=292141</forum>
+    <source>https://github.com/romanvm/kodi.web-pdb</source>
+    <assets>
+      <icon>icon.png</icon>
+      <screenshot>resources/screenshot.png</screenshot>
+    </assets>
+    <news>1.4.2: Fixed web UI on some platforms (Raspberry Pi).</news>
+  </extension>
 </addon><addon id="plugin.video.spotifytube" name="Spotify Tube" provider-name="DigaoGT" version="1.0.4">
     <requires>
         <import addon="xbmc.python" version="2.25.0" />
