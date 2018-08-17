@@ -227,7 +227,7 @@
         <description />
         <platform>all</platform>
     </extension>
-</addon><addon id="plugin.video.spotitube" name="Youtube Music" provider-name="realvito (inspired by L0RE)" version="2.1.2">
+</addon><addon id="plugin.video.spotitube" name="Youtube Music" provider-name="digaogt (inspired by realvito)" version="2.1.3">
 	<requires>
         <import addon="xbmc.python" version="2.24.0" />
 		<import addon="plugin.video.youtube" />
