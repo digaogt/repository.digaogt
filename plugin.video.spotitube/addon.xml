@@ -25,11 +25,9 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][COLOR orangered]Version 2.1.2  (05.08.2018)[/COLOR][/B] by realvito[CR]
-- fixed: all Videolists under "Billboard" are empty (Website-Structure changes)
-- fixed: Error if open Videolists under "Search"
-- changed: Language-Files from "strings.xml" to "strings.po"
-- added: make Addon compatible with PYTHON vers.3 (for KODI-19+) :-)
+        <news>[B]Version 2.1.3  (24.08.2018)[/B] by digaogt
+            - fixed: TypeError on listSpotifyTUN_Videos
+            - added: "official" to Youtube search
 		</news>
 	</extension>
 </addon>

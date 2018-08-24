@@ -1,4 +1,4 @@
-﻿1.0.0
+1.0.0
 - Initial release
 
 1.0.1
@@ -120,3 +120,7 @@
 - fixed: Error if open Videolists under "Search"
 - changed: Language-Files from "strings.xml" to "strings.po"
 - added: make Addon compatible with PYTHON vers.3 (for KODI-19+) :-)
+
+[B]Version 2.1.3  (24.08.2018)[/B] by digaogt
+- fixed: TypeError on listSpotifyTUN_Videos
+- added: "official" to Youtube search
