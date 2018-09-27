@@ -130,7 +130,7 @@
 		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
 		<website />
 	</extension>
-</addon><addon id="plugin.video.live.streamspro" name="LiveStreamsPro" provider-name="DrigoSpBr" version="2.8.5">
+</addon><addon id="plugin.video.live.streamspro" name="LiveStreamsPro" provider-name="DrigoSpBr" version="2.8.6">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.beautifulsoup" version="3.2.1" />
@@ -152,8 +152,9 @@
 
 
   <extension point="xbmc.addon.metadata">
-    <summary>Forked from livestreamsPro by Shani, with small adjusts in regex</summary>
+    <summary>Testversion - Forked from livestreamsPro by Shani, with small adjusts in regex</summary>
     <description>
+        2.8.6 -&gt; Commented time xbmc.sleep()
         2.8.5 -&gt; Changed time xbmc.sleep()
         In addition to what livestreams allowed you to do, you can now,
         1. call regex in regex,
