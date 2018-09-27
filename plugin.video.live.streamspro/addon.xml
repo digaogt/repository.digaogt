@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.live.streamspro"
        name="LiveStreamsPro"
-       version="2.8.6"
+       version="2.8.7"
        provider-name="DrigoSpBr">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
@@ -24,10 +24,9 @@
 
 
   <extension point="xbmc.addon.metadata">
-    <summary>Testversion - Forked from livestreamsPro by Shani, with small adjusts in regex</summary>
+    <summary>Teste - Forked from livestreamsPro by Shani, with small adjusts in regex</summary>
     <description>
-        2.8.6 -> Commented time xbmc.sleep()
-        2.8.5 -> Changed time xbmc.sleep()
+        2.8.7 -> Changed time xbmc.sleep()
         In addition to what livestreams allowed you to do, you can now,
         1. call regex in regex,
         2. multiple regex in page, regex in session, also htmlunescape responses
