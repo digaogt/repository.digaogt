@@ -39,7 +39,7 @@
 			- option to disable Globosat play
         </news>
 	</extension>
-</addon><addon id="plugin.video.youtube" name="YouTube" provider-name="bromix" version="6.2.0~beta1">
+</addon><addon id="plugin.video.youtube" name="YouTube" provider-name="bromix" version="6.2.0~beta3">
     <requires>
         <import addon="xbmc.python" version="2.20.0" />
         <import addon="script.module.six" version="1.11.0" />
@@ -55,20 +55,27 @@
         <news>
 6.2.0
 [add] Context menu -&gt; 'Play with subtitles' |contrib: solarus|
-[add] Option to download subtitles before playback in Settings -&gt; General -&gt; Configure subtitles
+[add] Option to download subtitles before playback in Settings -&amp;gt; General -&amp;gt; Configure subtitles
 [add] Refresh context menu to all videos/live streams
-[add] 'Settings -&gt; Advanced -&gt; Use YouTube website urls' for external/alternative players
+[add] &amp;strm=true parameter for strm files in Kodi 18 |contrib: vlmaksime|
+    - use description from library and set watched status
+[add] 'Settings -&amp;gt; Advanced -&amp;gt; Use YouTube website urls' for external/alternative players
             eg. Player: MPC-BE, URL: https://www.youtube.com/watch?v=C0NyvxTJGcQ
 [fix] Reported background progress dialog percentage
 [fix] Playlist items, use video_items instead of playback_items
+[fix] search history size
+[fix] remove Spanish (Latin America)|es-419 from the setup wizard, causing invalidLanguage and invalidRelevanceLanguage errors
 [upd] Improve speed of playback starting and resolver
             before: min: 1.5s max: 2.6s median: 1.7s
             after:  min: 0.9s max: 2.6s median: 1.2s
 [chg] refactor logging and system version
 [chg] Localize confirmation
-[lang] es_es strings |contrib: roliverosc|
 [lang] el_gr strings |contrib: twilight0|
+[lang] es_es strings |contrib: roliverosc|
+[lang] es_mx strings |contrib: Intel11|
+[lang] it_it strings |contrib: SebastianoPistore|
 [lang] nl_nl strings |contrib: Markman-B|
+[lang] ru_ru strings |contrib: vlmaksime|
         </news>
         <assets>
             <icon>icon.png</icon>
@@ -86,8 +93,11 @@
         <summary lang="hu_HU">YouTube kiegészítő</summary>
         <description lang="hu_HU">A YouTube világ egyik legnagyobb videómegosztó weboldala.</description>
         <summary lang="es_ES">Plugin para YouTube</summary>
-        <description lang="es_ES">YouTube es uno de los mayores sitios web de intercambio de vídeos del mundo.</description>
+        <description lang="es_ES">YouTube es uno de los sitios web para compartir videos más grande del mundo.</description>
         <disclaimer lang="es_ES">Este add-on no está respaldado por Google</disclaimer>
+        <summary lang="es_MX">Plugin para YouTube</summary>
+        <description lang="es_MX">YouTube es uno de los más grandes sitios web de intercambio de videos del mundo.</description>
+        <disclaimer lang="es_MX">Este add-on no está respaldado por Google</disclaimer>
         <summary lang="ru_RU">Видеодополнение YouTube</summary>
         <description lang="ru_RU">YouTube - популярнейший видеохостинговый сайт, предоставляющий пользователям услуги хранения, доставки и показа видео.</description>
         <summary lang="fr_FR">Plugin pour YouTube</summary>
@@ -104,7 +114,6 @@
         <disclaimer lang="el_GR">Η παρούσα μικροεφαρμογή δεν έχει υϊοθετηθεί από την Google</disclaimer>
         <summary lang="nb_NO">Tillegg for YouTube</summary>
         <description lang="nb_NO">YouTube er en av verdens største nettsider for videodeling.</description>
-        <language />
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
         <forum>https://forum.kodi.tv/showthread.php?tid=325740</forum>
