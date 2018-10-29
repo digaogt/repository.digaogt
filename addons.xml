@@ -39,7 +39,7 @@
 			- option to disable Globosat play
         </news>
 	</extension>
-</addon><addon id="plugin.video.youtube" name="YouTube" provider-name="bromix" version="6.2.0~beta3">
+</addon><addon id="plugin.video.youtube" name="YouTube" provider-name="bromix" version="6.2.0">
     <requires>
         <import addon="xbmc.python" version="2.20.0" />
         <import addon="script.module.six" version="1.11.0" />
@@ -53,13 +53,17 @@
     <extension library="resources/lib/" point="xbmc.python.module" />
     <extension point="xbmc.addon.metadata">
         <news>
+6.2.1
+[fix] some streams reporting as Unavailable
+[lang] sk_sk strings |contrib: jose1711|
+
 6.2.0
 [add] Context menu -&gt; 'Play with subtitles' |contrib: solarus|
-[add] Option to download subtitles before playback in Settings -&amp;gt; General -&amp;gt; Configure subtitles
+[add] Option to download subtitles before playback in Settings -&gt; General -&gt; Configure subtitles
 [add] Refresh context menu to all videos/live streams
 [add] &amp;strm=true parameter for strm files in Kodi 18 |contrib: vlmaksime|
     - use description from library and set watched status
-[add] 'Settings -&amp;gt; Advanced -&amp;gt; Use YouTube website urls' for external/alternative players
+[add] 'Settings -&gt; Advanced -&gt; Use YouTube website urls' for external/alternative players
             eg. Player: MPC-BE, URL: https://www.youtube.com/watch?v=C0NyvxTJGcQ
 [fix] Reported background progress dialog percentage
 [fix] Playlist items, use video_items instead of playback_items
@@ -114,6 +118,7 @@
         <disclaimer lang="el_GR">Η παρούσα μικροεφαρμογή δεν έχει υϊοθετηθεί από την Google</disclaimer>
         <summary lang="nb_NO">Tillegg for YouTube</summary>
         <description lang="nb_NO">YouTube er en av verdens største nettsider for videodeling.</description>
+        <language />
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
         <forum>https://forum.kodi.tv/showthread.php?tid=325740</forum>

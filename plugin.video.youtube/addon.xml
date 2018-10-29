@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.youtube" name="YouTube" version="6.2.0~beta3" provider-name="bromix">
+<addon id="plugin.video.youtube" name="YouTube" version="6.2.0" provider-name="bromix">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
-        <import addon='script.module.six' version='1.11.0'/>
+        <import addon="script.module.six" version="1.11.0"/>
         <import addon="script.module.requests" version="2.12.4"/>
         <import addon="script.module.inputstreamhelper" version="0.2.2" optional="true"/>
     </requires>
@@ -13,13 +13,17 @@
     <extension point="xbmc.python.module" library="resources/lib/"/>
     <extension point="xbmc.addon.metadata">
         <news>
+6.2.1
+[fix] some streams reporting as Unavailable
+[lang] sk_sk strings |contrib: jose1711|
+
 6.2.0
-[add] Context menu -> 'Play with subtitles' |contrib: solarus|
-[add] Option to download subtitles before playback in Settings -&amp;gt; General -&amp;gt; Configure subtitles
+[add] Context menu -&gt; &#39;Play with subtitles&#39; |contrib: solarus|
+[add] Option to download subtitles before playback in Settings -&gt; General -&gt; Configure subtitles
 [add] Refresh context menu to all videos/live streams
 [add] &amp;strm=true parameter for strm files in Kodi 18 |contrib: vlmaksime|
     - use description from library and set watched status
-[add] &#39;Settings -&amp;gt; Advanced -&amp;gt; Use YouTube website urls&#39; for external/alternative players
+[add] &#39;Settings -&gt; Advanced -&gt; Use YouTube website urls&#39; for external/alternative players
             eg. Player: MPC-BE, URL: https://www.youtube.com/watch?v=C0NyvxTJGcQ
 [fix] Reported background progress dialog percentage
 [fix] Playlist items, use video_items instead of playback_items
@@ -74,6 +78,7 @@
         <disclaimer lang="el_GR">Η παρούσα μικροεφαρμογή δεν έχει υϊοθετηθεί από την Google</disclaimer>
         <summary lang="nb_NO">Tillegg for YouTube</summary>
         <description lang="nb_NO">YouTube er en av verdens største nettsider for videodeling.</description>
+        <language></language>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
         <forum>https://forum.kodi.tv/showthread.php?tid=325740</forum>
