@@ -307,4 +307,34 @@ Ak máte poznámky či pripomienky k tomuto doplnku, prosím prispejte do diskus
             <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
+</addon><addon id="plugin.video.spotitube" name="Youtube Music" provider-name="digaogt (inspired by realvito)" version="2.1.4">
+	<requires>
+        <import addon="xbmc.python" version="2.24.0" />
+		<import addon="plugin.video.youtube" />
+	</requires>
+	<extension library="default.py" point="xbmc.python.pluginsource">
+		<provides>video audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de">Musik über Youtube abspielen</summary>
+		<summary lang="en">Play Music via Youtube</summary>
+		<description lang="de">Musik aus verschiedenen Quellen z.B. Billboard, iTunes, Spotify etc. auswählen und über Youtube abspielen.[CR][CR]Für mehr Informationen zu allen Neuerungen siehe - CHANGELOG.[CR]     TEST IT AND LIKE IT</description>
+		<description lang="en">Choose Music from different sources e.g. Billboard, iTunes, Spotify etc. and play it via Youtube.[CR][CR]For more information about all new features see - CHANGELOG.[CR]     TEST IT AND LIKE IT</description>
+		<disclaimer lang="de">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language />
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>http://www.kodinerds.net/index.php/Thread/47087-Release-YoutubeMusic-patched/</forum>
+		<website />
+		<email />
+		<source>https://github.com/kodinerds/repo/tree/master/plugin.video.spotitube</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+        <news>[B]Version 2.1.4  (24.08.2018)[/B] by digaogt
+            - fixed: TypeError on listSpotifyTUN_Videos
+		</news>
+	</extension>
 </addon></addons>
