@@ -281,4 +281,30 @@ Ak máte poznámky či pripomienky k tomuto doplnku, prosím prispejte do diskus
 			<screenshot>resources/screenshots/screenshot-01.png</screenshot>
 		</assets>
     </extension>
+</addon><addon id="skin.fusex" name="FuseX" provider-name="jurialmunkey, aenemapy" version="0.4.2">
+    <requires>
+        <import addon="xbmc.gui" version="5.13.0" />
+        <import addon="script.skinshortcuts" version="0.4.0" />
+        <import addon="script.skin.helper.service" version="1.1.0" />
+        <import addon="script.toolbox" version="1.0.0" />
+        <import addon="script.image.resource.select" version="0.0.5" />
+        <import addon="plugin.program.autocompletion" version="1.0.1" />
+        <import addon="resource.images.studios.white" version="0.0.10" />
+        <import addon="resource.images.moviegenreicons.transparent" version="0.0.6" />
+    </requires>
+    <extension debugging="false" defaultthemename="Textures.xbt" effectslowdown="0.75" point="xbmc.gui.skin">
+        <res aspect="16:9" default="true" folder="1080i" height="1080" width="1920" />
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Soft gradients, pixel highlights and visible fanart</summary>
+        <description lang="en">Modded Version of Fuse Neue</description>
+        <platform>all</platform>
+        <license>Creative Commons Non Commercial 3.0 License</license>
+        <forum />
+        <source />
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
 </addon></addons>
