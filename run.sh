@@ -6,4 +6,4 @@ sleep 7
 git add *
 git commit -a -m "Atualização de repositório na data de: `date`"
 git push
-kill $PPID
+exit
