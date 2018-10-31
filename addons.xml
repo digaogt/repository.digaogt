@@ -337,4 +337,16 @@ Ak máte poznámky či pripomienky k tomuto doplnku, prosím prispejte do diskus
             - fixed: TypeError on listSpotifyTUN_Videos
 		</news>
 	</extension>
+</addon><addon id="script.ivueguide" name="Ivue TV Guide" provider-name="iVue Tv Guide" version="4.1.9">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.simplejson" version="2.0.10" />
+	</requires>
+	<extension library="addon.py" point="xbmc.python.script" />
+    <extension library="service.py" point="xbmc.service" start="login" />
+	<extension point="xbmc.addon.metadata">
+	<provides>video</provides>
+		<description lang="en">Final Release of Ivue Guide, simple free and effective, We hope you like it now with category intergration #teamiVue, Huge thanks to all coders out there for getting involved.</description>
+		<disclaimer lang="en">Final Release of Ivue Guide and is forked and based on FTV Guide, Dixie , Ivue ,Primeval, tommy winthers original code, </disclaimer>
+	</extension>
 </addon></addons>
