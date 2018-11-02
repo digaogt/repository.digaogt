@@ -350,4 +350,20 @@ Ak máte poznámky či pripomienky k tomuto doplnku, prosím prispejte do diskus
 		<description lang="en">Final Release of Ivue Guide, simple free and effective, We hope you like it now with category intergration #teamiVue, Huge thanks to all coders out there for getting involved.</description>
 		<disclaimer lang="en">Final Release of Ivue Guide and is forked and based on FTV Guide, Dixie , Ivue ,Primeval, tommy winthers original code, </disclaimer>
 	</extension>
+</addon><addon id="script.module.hyper" name="hyper" provider-name="digaogt" version="0.7.0">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">HTTP is changing under our feet. HTTP/1.1, our old friend, is being supplemented by the brand new HTTP/2 standard. HTTP/2 provides many benefits: improved speed, lower bandwidth usage, better connection management, and more.</summary>
+    <description lang="en_GB">Packed for KODI from https://github.com/Lukasa/hyper</description>
+    <platform>all</platform>
+    <language />
+    <license>MIT</license>
+    <forum />
+    <website>https://hyper.readthedocs.io/en/latest</website>
+    <source>https://github.com/digaogt/repository.digaogt/script.module.hyper</source>
+    <email>digaogt AT yahoo.com.br</email>
+  </extension>
 </addon></addons>
