@@ -39,7 +39,7 @@
 			- option to disable Globosat play
         </news>
 	</extension>
-</addon><addon id="plugin.video.youtube" name="YouTube" provider-name="bromix" version="6.3.0~alpha5">
+</addon><addon id="plugin.video.youtube" name="YouTube" provider-name="anxdpanic, bromix" version="6.3.2~alpha1">
     <requires>
         <import addon="xbmc.python" version="2.20.0" />
         <import addon="script.module.six" version="1.11.0" />
@@ -53,20 +53,37 @@
     <extension library="resources/lib/" point="xbmc.python.module" />
     <extension point="xbmc.addon.metadata">
         <news>
+6.3.2
+[fix] some videos not playing when logged in
+[fix] reset function cache at restart/update to resolve issues persisting due to cached results
+[fix] service potentially not shutting down http server
+[upd] player javascript retrieval
+
+6.3.1
+[fix] ensure playback monitoring is monitoring the correct item
+[fix] check for abortRequested while processing purchased collections
+[upd] Use setArt instead of iconImage, thumbnailImage and setProperty('fanart_image')
+
 6.3.0
 [add] support for keymapping of some endpoints, wiki: https://kodi.wiki/view/Add-on:YouTube#Keymaps
 [add] 'Rate videos in playlists' setting to 'Settings - General - Rate after watching'
 [add] Support for purchased collections |contrib: MisterD81|
+[fix] Playback of some videos (e.g. music videos)
+[fix] Live stream playback
 [fix] post play add to watch history
 [fix] fix add-ons playback history not saving
 [fix] playback monitoring/post play events triggering for the wrong videos in some cases
+[fix] call setResolvedUrl(False) if get_video_streams fails
 [upd] code cosmetics and resolve inspections
 [upd] improve watch history tracking, actively report watch times and state during playback
 [upd] sign in/out, switch user, and settings ListItems to isFolder=False and isPlayable=False
 [upd] improve watch later playlist id retrieval and feedback
 [upd] Use SPDX license identifier
 [lang] de_de strings |contrib: tobhor|
+[lang] el_gr strings |contrib: twilight0|
 [lang] es_es strings |contrib: roliverosc|
+[lang] ko_kr strings |contrib: parkmino|
+[lang] nl_nl strings |contrib: Markman-B|
         </news>
         <assets>
             <icon>icon.png</icon>
@@ -105,6 +122,8 @@
         <disclaimer lang="el_GR">Η παρούσα μικροεφαρμογή δεν έχει υϊοθετηθεί από την Google</disclaimer>
         <summary lang="nb_NO">Tillegg for YouTube</summary>
         <description lang="nb_NO">YouTube er en av verdens største nettsider for videodeling.</description>
+        <summary lang="ko_KR">유튜브 플러그인</summary>
+        <description lang="ko_KR">유튜브는 세상에서 가장 큰 동영상 공유 사이트 중의 하나입니다.</description>
         <language />
         <platform>all</platform>
         <license>GPL-2.0-only</license>
@@ -114,7 +133,7 @@
         <source>https://github.com/jdf76/plugin.video.youtube</source>
         <reuselanguageinvoker>true</reuselanguageinvoker>
     </extension>
-</addon><addon id="plugin.video.live.streamspro" name="LiveStreamsPro" provider-name="DrigoSpBr" version="2.8.7">
+</addon><addon id="plugin.video.live.streamspro" name="LiveStreamsPro" provider-name="DrigoSpBr" version="2.8.8">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.beautifulsoup" version="3.2.1" />
@@ -138,6 +157,7 @@
   <extension point="xbmc.addon.metadata">
     <summary>Teste - Forked from livestreamsPro by Shani, with small adjusts in regex</summary>
     <description>
+	2.8.8 -&gt; Added 'else' to getUrl
         2.8.7 -&gt; Changed time xbmc.sleep()
         In addition to what livestreams allowed you to do, you can now,
         1. call regex in regex,
@@ -266,89 +286,4 @@ Ak máte poznámky či pripomienky k tomuto doplnku, prosím prispejte do diskus
 			<screenshot>resources/screenshots/screenshot-01.png</screenshot>
 		</assets>
     </extension>
-</addon><addon id="skin.fusex" name="FuseX" provider-name="jurialmunkey, aenemapy" version="0.4.2">
-    <requires>
-        <import addon="xbmc.gui" version="5.13.0" />
-        <import addon="script.skinshortcuts" version="0.4.0" />
-        <import addon="script.skin.helper.service" version="1.1.0" />
-        <import addon="script.toolbox" version="1.0.0" />
-        <import addon="script.image.resource.select" version="0.0.5" />
-        <import addon="plugin.program.autocompletion" version="1.0.1" />
-        <import addon="resource.images.studios.white" version="0.0.10" />
-        <import addon="resource.images.moviegenreicons.transparent" version="0.0.6" />
-    </requires>
-    <extension debugging="false" defaultthemename="Textures.xbt" effectslowdown="0.75" point="xbmc.gui.skin">
-        <res aspect="16:9" default="true" folder="1080i" height="1080" width="1920" />
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Soft gradients, pixel highlights and visible fanart</summary>
-        <description lang="en">Modded Version of Fuse Neue</description>
-        <platform>all</platform>
-        <license>Creative Commons Non Commercial 3.0 License</license>
-        <forum />
-        <source />
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon><addon id="plugin.video.spotitube" name="Youtube Music" provider-name="digaogt (inspired by realvito)" version="2.1.4">
-	<requires>
-        <import addon="xbmc.python" version="2.24.0" />
-		<import addon="plugin.video.youtube" />
-	</requires>
-	<extension library="default.py" point="xbmc.python.pluginsource">
-		<provides>video audio</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="de">Musik über Youtube abspielen</summary>
-		<summary lang="en">Play Music via Youtube</summary>
-		<description lang="de">Musik aus verschiedenen Quellen z.B. Billboard, iTunes, Spotify etc. auswählen und über Youtube abspielen.[CR][CR]Für mehr Informationen zu allen Neuerungen siehe - CHANGELOG.[CR]     TEST IT AND LIKE IT</description>
-		<description lang="en">Choose Music from different sources e.g. Billboard, iTunes, Spotify etc. and play it via Youtube.[CR][CR]For more information about all new features see - CHANGELOG.[CR]     TEST IT AND LIKE IT</description>
-		<disclaimer lang="de">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
-		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
-		<language />
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>http://www.kodinerds.net/index.php/Thread/47087-Release-YoutubeMusic-patched/</forum>
-		<website />
-		<email />
-		<source>https://github.com/kodinerds/repo/tree/master/plugin.video.spotitube</source>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-        <news>[B]Version 2.1.4  (24.08.2018)[/B] by digaogt
-            - fixed: TypeError on listSpotifyTUN_Videos
-		</news>
-	</extension>
-</addon><addon id="script.ivueguide" name="Ivue TV Guide" provider-name="iVue Tv Guide" version="4.1.9">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="script.module.simplejson" version="2.0.10" />
-		<import addon="script.module.requests" />
-	</requires>
-	<extension library="addon.py" point="xbmc.python.script" />
-    <extension library="service.py" point="xbmc.service" start="login" />
-	<extension point="xbmc.addon.metadata">
-	<provides>video</provides>
-		<description lang="en">Final Release of Ivue Guide, simple free and effective, We hope you like it now with category intergration #teamiVue, Huge thanks to all coders out there for getting involved.</description>
-		<disclaimer lang="en">Final Release of Ivue Guide and is forked and based on FTV Guide, Dixie , Ivue ,Primeval, tommy winthers original code, </disclaimer>
-	</extension>
-</addon><addon id="script.module.hyper" name="hyper" provider-name="digaogt" version="0.7.0">
-  <requires>
-    <import addon="xbmc.python" version="2.25.0" />
-  </requires>
-  <extension library="lib" point="xbmc.python.module" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">HTTP is changing under our feet. HTTP/1.1, our old friend, is being supplemented by the brand new HTTP/2 standard. HTTP/2 provides many benefits: improved speed, lower bandwidth usage, better connection management, and more.</summary>
-    <description lang="en_GB">Packed for KODI from https://github.com/Lukasa/hyper</description>
-    <platform>all</platform>
-    <language />
-    <license>MIT</license>
-    <forum />
-    <website>https://hyper.readthedocs.io/en/latest</website>
-    <source>https://github.com/digaogt/repository.digaogt/script.module.hyper</source>
-    <email>digaogt AT yahoo.com.br</email>
-  </extension>
 </addon></addons>
