@@ -265,4 +265,16 @@ Ak máte poznámky či pripomienky k tomuto doplnku, prosím prispejte do diskus
 			<screenshot>resources/screenshots/screenshot-01.png</screenshot>
 		</assets>
     </extension>
+</addon><addon id="script.speedtestnet" name="ARNU Box Speed Tester" provider-name="ARNU Box / Josh.5" version="1.0.0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.script">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">ARNU Box Speed Tester</summary>
+    <description lang="en">ARNU Box Speed Tester powered by speedtest.net will give you accurate Internet speed/ping test results. \n Brought to you by http://www.arnubox.com</description>
+    <platform>all</platform>
+  </extension>
 </addon></addons>
