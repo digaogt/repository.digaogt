@@ -39,7 +39,7 @@
 			- option to disable Globosat play
         </news>
 	</extension>
-</addon><addon id="plugin.video.youtube" name="YouTube" provider-name="anxdpanic, bromix" version="6.4.1">
+</addon><addon id="plugin.video.youtube" name="YouTube" provider-name="anxdpanic, bromix" version="6.5.2~beta1">
     <requires>
         <import addon="xbmc.python" version="2.20.0" />
         <import addon="script.module.six" version="1.11.0" />
@@ -53,9 +53,8 @@
     <extension library="resources/lib/" point="xbmc.python.module" />
     <extension point="xbmc.addon.metadata">
         <news>
-6.4.2
-[fix] unescape html entities in title and plot
-[lang] es_es strings |contrib: roliverosc|
+6.5.2
+[fix] ended live streams not using mpeg-dash when enabled
         </news>
         <assets>
             <icon>icon.png</icon>
