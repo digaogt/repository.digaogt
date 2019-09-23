@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="plugin.video.brplay" name="BR play" provider-name="brplayer" version="0.0.22">
+<addons><addon id="plugin.video.brplay" name="BR play" provider-name="brplayer" version="0.0.25">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup" version="3.2.1" />
@@ -23,7 +23,7 @@
 			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
 			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
 		</assets>
-		<news>0.0.22
+		<news>0.0.25
 			- Support for 4k HDR content
 			- Support for local programming
 			- Support for Futura Live Channel
@@ -33,13 +33,14 @@
 			- Updated Combate scraper logic
 			- Added more Combate content
 			- Globosat Play and Sexyhot Play now use Globo Play credentials (must be associated to the provider in the website)
-			- Support for REDE AMAZONICA Globo affiliate
+			- Support for additional Globo affiliates
 			- update Globoplay epg API
 			- option to set different credentials for Globosat play
 			- option to disable Globosat play
+			- Fix Globosat authentication
         </news>
 	</extension>
-</addon><addon id="plugin.video.youtube" name="YouTube" provider-name="anxdpanic, bromix" version="6.5.2~beta1">
+</addon><addon id="plugin.video.youtube" name="YouTube" provider-name="anxdpanic, bromix" version="6.5.2~beta3">
     <requires>
         <import addon="xbmc.python" version="2.20.0" />
         <import addon="script.module.six" version="1.11.0" />
@@ -54,7 +55,11 @@
     <extension point="xbmc.addon.metadata">
         <news>
 6.5.2
+[fix] playback (No streams found)
+[fix] missing metadata
 [fix] ended live streams not using mpeg-dash when enabled
+[fix] subscriptions not showing latest videos
+[upd] simplify youtube_resolver regex |contrib: Twilight0|
         </news>
         <assets>
             <icon>icon.png</icon>
