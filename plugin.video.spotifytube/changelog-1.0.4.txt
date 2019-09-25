@@ -1,8 +1,0 @@
-[B]08/08/2018 - Versão 1.0.4[/B] 
-- Correção menu Lançamentos e ajuste no regex
-
-[B]06/07/2018 - Versão 1.0.3[/B] 
-- Correção com suporte a API do Spotify
-
-[B]26/09/2016 - Versão 1.0.0[/B] 
-- Versão inicial do addon by AddonBrasil
