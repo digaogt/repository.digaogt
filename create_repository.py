@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 r"""
 Create a Kodi add-on repository from add-on sources
 
