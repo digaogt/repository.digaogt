@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="plugin.video.brplay" name="BR play" provider-name="brplayer" version="0.0.26">
+<addons><addon id="plugin.video.brplay" version="0.0.26" name="BR play" provider-name="brplayer">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup" version="3.2.1" />
@@ -7,7 +7,7 @@
 		<import addon="script.module.buggalo" version="1.1.6" />
 		<import addon="script.module.pytz" version="2014.2" />
 	</requires>
-	<extension library="addon.py" point="xbmc.python.pluginsource">
+	<extension point="xbmc.python.pluginsource" library="addon.py">
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -41,29 +41,22 @@
 			- Updated Globosat VOD API to work with seasons and episodes
         </news>
 	</extension>
-</addon><addon id="plugin.video.youtube" name="YouTube" provider-name="anxdpanic, bromix" version="6.5.2">
+</addon><addon id="plugin.video.youtube" name="YouTube" version="6.5.2" provider-name="anxdpanic, bromix">
     <requires>
         <import addon="xbmc.python" version="2.20.0" />
         <import addon="script.module.six" version="1.11.0" />
         <import addon="script.module.requests" version="2.12.4" />
-        <import addon="script.module.inputstreamhelper" optional="true" version="0.2.2" />
+        <import addon="script.module.inputstreamhelper" version="0.2.2" optional="true" />
     </requires>
-    <extension library="resources/lib/default.py" point="xbmc.python.pluginsource">
+    <extension point="xbmc.python.pluginsource" library="resources/lib/default.py">
         <provides>video</provides>
     </extension>
-    <extension library="resources/lib/startup.py" point="xbmc.service" start="login" />
-    <extension library="resources/lib/" point="xbmc.python.module" />
+    <extension point="xbmc.service" library="resources/lib/startup.py" start="login" />
+    <extension point="xbmc.python.module" library="resources/lib/" />
     <extension point="xbmc.addon.metadata">
         <news>
-6.5.2
-[fix] playback (No streams found)
-[fix] missing metadata
-[fix] ended live streams not using mpeg-dash when enabled
-[fix] subscriptions not showing latest videos
-[upd] simplify youtube_resolver regex |contrib: Twilight0|
-[lang] de_de strings |contrib: TehTux|
-[lang] pl_pl strings |contrib: drrak|
-[lang] nl_nl strings |contrib: Markman-B|
+[fix] playback of some videos with no adaptive video streams
+[fix] don't update watch history when incognito/screensaver/live |contrib: regseb|
         </news>
         <assets>
             <icon>icon.png</icon>
@@ -113,7 +106,7 @@
         <source>https://github.com/jdf76/plugin.video.youtube</source>
         <reuselanguageinvoker>true</reuselanguageinvoker>
     </extension>
-</addon><addon id="plugin.video.live.streamspro" name="LiveStreamsPro" provider-name="DrigoSpBr" version="2.8.8">
+</addon><addon id="plugin.video.live.streamspro" name="LiveStreamsPro" version="2.8.8" provider-name="DrigoSpBr">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.beautifulsoup" version="3.2.1" />
@@ -129,7 +122,7 @@
      <import addon="script.module.livestreamer" optional="true" />
      <import addon="script.module.pyamf" optional="true" />
   </requires>
-  <extension library="default.py" point="xbmc.python.pluginsource">
+  <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
 
@@ -155,7 +148,7 @@
     </description>
     <platform>all</platform>
   </extension>
-</addon><addon id="script.module.liveresolver" name="LiveResolver" provider-name="natko1412" version="0.1.50">
+</addon><addon id="script.module.liveresolver" name="LiveResolver" version="0.1.50" provider-name="natko1412">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.beautifulsoup" version="3.2.1" />
@@ -163,19 +156,19 @@
     <import addon="script.module.addon.common" version="2.0.0" />
 
   </requires>
-  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary lang="en">Resolve common live video host URL's to be playable in XBMC/Kodi + find links embeded in sites.</summary>
     <description lang="en" />    
   </extension>
-</addon><addon id="script.video.F4mProxy" name="F4mProxy" provider-name="Shani" version="2.8.8">
+</addon><addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.8" provider-name="Shani">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.requests" />
     </requires>
-    <extension library="lib" point="xbmc.python.module" />
-    <extension library="addon.py" point="xbmc.python.pluginsource">
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="addon.py">
         <provides>executable</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
@@ -183,12 +176,12 @@
         <summary lang="en">Proxy for f4m</summary>
         <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
     </extension>
-</addon><addon id="plugin.video.f4mTester" name="f4mTester" provider-name="Shani" version="2.7.2">
+</addon><addon id="plugin.video.f4mTester" name="f4mTester" version="2.7.2" provider-name="Shani">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="script.video.F4mProxy" version="2.7.1" />
     </requires>
-    <extension library="default.py" point="xbmc.python.pluginsource">
+    <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
@@ -196,15 +189,15 @@
         <description />
         <platform>all</platform>
     </extension>
-</addon><addon id="script.brguide" name="BR Guide" provider-name="brplayer" version="1.2.0">
+</addon><addon id="script.brguide" name="BR Guide" version="1.2.0" provider-name="brplayer">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.simplejson" version="2.0.10" />
         <import addon="script.module.buggalo" version="1.1.2" />
         <import addon="script.module.requests" version="0.13.2" />
     </requires>
-    <extension library="addon.py" point="xbmc.python.script" />
-    <extension library="service.py" point="xbmc.service" start="login" />
+    <extension point="xbmc.python.script" library="addon.py" />
+    <extension point="xbmc.service" library="service.py" start="login" />
     <extension point="xbmc.addon.metadata">
         <summary lang="be">TV Guide with XMLTV and streaming support</summary>
         <summary lang="ca">Guia de TV amb suport de XMLTV i flux de dades</summary>
@@ -266,11 +259,11 @@ Ak máte poznámky či pripomienky k tomuto doplnku, prosím prispejte do diskus
 			<screenshot>resources/screenshots/screenshot-01.png</screenshot>
 		</assets>
     </extension>
-</addon><addon id="script.speedtestnet" name="ARNU Box Speed Tester" provider-name="ARNU Box / Josh.5" version="1.0.0">
+</addon><addon id="script.speedtestnet" name="ARNU Box Speed Tester" version="1.0.0" provider-name="ARNU Box / Josh.5">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
-  <extension library="default.py" point="xbmc.python.script">
+  <extension point="xbmc.python.script" library="default.py">
         <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
